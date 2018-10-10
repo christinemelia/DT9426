@@ -1,0 +1,50 @@
+3 features that make python a popular language for programing are :
+
+1. Pyhthon contains a robust library 
+2. The code is redable and easily maintained
+3. Python is reliable and efficent 
+
+
+
+
+
+What problems has python faced as a language and ecosystem? 
+
+Difficulty in Using Other Languages
+As pyhthon developers become so adapt and used to pythons platforms and coding libraries they find it difficult to switch to other programming langiages such as ajava or c++, in addition ,  the declaring of cast valiues or variable types, syntactic requirements of adding curly braces or semi colons as seen as an unecessary task. 
+
+
+Python is weak in the area of mobile computing, but more adapt to desktop distrubted systems. 
+Many programmers have an aversion to Python because they dislike the way indenting is used to denote control blocks, rather than delimiters such as braces or 'begin/end'.
+
+Python executes with the help of an interpreter instead of the compiler, which causes it to slow down because compilation and execution help it to work normally. Because Python is dynamically but strongly-typed language, it can do no compile-time checks for type consistency.
+
+
+
+
+
+Major softwareapplications using python 
+
+Python is being used by paypal , instagram , google , netflix, spotify, reedit and quora but to name a few. 
+
+
+
+
+
+
+Relationship between python and GIS
+
+Python is now the preferred programming language used by ESRI , Grass and QGIS. 
+python can be used as a scripting language to batch process data , analyse data, view data. it has the capability to automate geoprocessing tasks. 
+
+
+
+
+
+
+
+
+
+
+
+
