@@ -1,0 +1,190 @@
+3 methods that invoke list object in python 
+
+list.append()
+the method list.append(x) will add the item x to the end of the list , with list index starting at 0 up up the appemd methos wil add the data passed to the end of the lits of items 
+so if i had a list of items in my fridge already declared and populated as follows 
+
+fridge[butter, eggs,milk,water] and i wanted to add another item like cheese  to that list and have it at the end of the list in sequential order i would use list.append()
+method   
+
+oriiginal list
+ fridge[ butter, eggs, milk, water]
+ fridge.append(cheese) // where fridhe is the name of the list 
+ print.fridge()
+ fridge[butter, eggs, milk, water, cheese]
+ 
+
+list.insert(i,x) the list insert method passes to an  argument i,x  where i being the index position you would like to add an item to, 
+and x being the item you wish to insert. 
+
+ using my fridge list above as an example  i would like to add ham in position 2 of the list so i have to specify this in the code argument
+ 
+  
+ fridge[butter, eggs, milk, water  ,cheese] ---  this is tge fridge list index positions fridge--[0 butter ,1 eggs, 3 milk, 4water, 5 cheese]
+ fridge.insert(1,ham)
+ fridge.print()
+ 
+ the new list will be printed with the modification of ham at index 2 ( note that index starts at 0 , 1, etc.,)
+ 
+ fridge[butter, ham,eggs,milk,water,cheese]
+ eggs that ehere at index 2 have been moved up to the next index 
+ 
+ 
+ 
+ 
+ 
+list.pop() We can use the list.pop([i]) method to return the item at the given index position from the list and then remove that item.
+ The square brackets around the i for index tell us that this parameter is optional, so if we don’t specify an index , the last item will be returned
+  and removed. 
+  
+  using the working exaple of fridge list 
+  
+  fridge[butter, ham,eggs,milk,water,cheese]
+  
+  i wuld like  item remove milk  from my list whicis  agiven index of 3 
+  
+  fridge.pop([3] milk0
+  
+  fridge.print90
+  
+  the result would be removal of milk at index 3 in the list 
+  
+  fridge[butter, ham,eggs, water,cheese]
+  the new list reads - fridge list; butter @ index 0, ham @ index 1 , eggs @index 2, water @index3 and cheese @ index 4. 
+  so milk that was at index 3 has been removed by index reference and name 
+  
+  
+  
+  
+  Q.  How would you implement a counter in a for loop?
+   That is, as you iterate through the items in a sequence, how do you count how many times you run the loop?
+    Show this with pseudocode
+	
+How would you just output every third item?
+	
+A for  loop is a programming language statement, i.e. an iteration statement, which allows a code block to
+ be repeated a certain number of times.Iterator-based for loop 
+This kind of a for loop iterates over an enumeration of a set of items.
+It is usually characterized by the use of an implicit or explicit iterator. In each iteration step a loop variable is set to
+ a value in a sequence or other data collection. 
+This kind of for loop is known in most Unix and Linux shells and it is the one which is implemented in Python.
+for <variable> in <sequence>:
+	<statements>
+else:
+	<statements>
+	
+
+	i would use the enumerate() enumerate(sequence, start=0) which  is one of the built in python functions.
+	 It returns an enumerate object each containing a pair of count/index and value.
+	 Using enumerate we can iterate over items while having an extra counter variable which counts total iteration.
+	  
+	 
+	 eg 
+	 
+ fridge_list = ['butter', ham', 'eggs', 'water,'cheese']
+ print("printing count using enumerate") // print the satement within the brackets
+ for count, fridge in enumerate(fridge_list, start=1);   //for each count , fridge list and start index at 1 
+ print(count,fridge) // then print the index number and item in list 
+ 
+the output should read:
+
+Printing count using enumerate
+1 butter
+2 ham
+3 eggs
+4 water
+5 cheese
+
+ print("fridge_list {}: {}".format(num, name))
+ 
+ 
+
+to print every 3rd item in thelist  i would try to use enumerate rather than slice as i have not fully unbderstood the slice method 
+
+
+seq = [1,2,3,4,5,6,7,8,9,10]
+every_three = [value for idx, value in enumerate(seq) if idx % 3 == 0]
+
+
+
+Q. What module would you import for;
+a) working with directories and paths
+
+ The os module 
+  import os 
+  //exampl of using os to get current working directory is
+ os.getcwd()
+ 
+ 
+b) working with dates and times 
+
+datetime module 
+
+from datetime import date, datetime
+
+
+c) working with common data interchange formats (google might help...)
+hint https://docs.python.org/3.6/library/index.html
+
+answer :  common data archiving and compression formats are directly supported
+ by modules including: zlib, gzip, bz2, lzma,lxml, zipfile and tarfile.
+ 
+ import zlib
+ import gzip
+import  bz2
+import lzma as xz,  import pylzma as xz , import os 
+from lxml import etree , import xml.etree.ElementTree as xml
+import zipfile
+import struct
+import tarfile 
+
+
+
+Q. Have a look at tuples. How are these different from lists. Why would you use one over the other?
+
+A tuple is a sequence of immutable Python objects. Tuples are sequences, just like lists.
+ The differences between tuples and lists are, the tuples cannot be changed unlike lists and tuples use parentheses, 
+ whereas lists use square brackets.
+ 
+ Python Lists:
+ 
+Lists Are Ordered
+Lists Can Contain Arbitrary Objects
+List Elements Can Be Accessed by Index
+Lists Can Be Nested
+Lists Are Mutable
+Lists Are Dynamic
+
+Python Tuples:
+
+Defining and Using Tuples
+Tuple Assignment, Packing, and Unpacking
+
+
+#import datetime
+
+#input = int(input("Enter numerical month number eg 03 for march : "))
+#my_date = datetime.datetime.strptime(input, "%m")
+#print my_date.strftime("%b") 
+
+
+
+import datetime
+
+
+# getting input of integer from the user and assigning to monthinger 
+monthinteger = int(input("Enter numerical month number eg 3 for march : "))
+
+
+#using tuple function to output string month 
+month = datetime.date(1900, monthinteger, 1).strftime('%B')
+
+print (month)
+
+
+
+
+ 
+ 
+ 
+ 
