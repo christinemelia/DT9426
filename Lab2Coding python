@@ -1,0 +1,193 @@
+# Python program to check if the input year is a leap year or not
+import datetime
+
+
+import calendar
+
+# To get year (integer input) from the user
+
+year = int(input("Enter a year: "))
+
+
+
+# Extend the program to output how long it has been since the last leap year if it is not a leap year.
+
+if (year % 4) == 0: 
+   if (year % 100) == 0:
+       if (year % 400) == 0:
+           print("{0} is a leap year".format(year))
+       else:
+           print("{0} is not a leap year".format(year))
+   else:
+       print("{0} is a leap year".format(year))
+else:
+   print("{0} is not a leap year".format(year))
+
+
+
+###
+
+
+
+import datetime
+
+mydate = datetime.datetime.now()
+
+mydate.strftime("%B")
+
+#########
+
+
+
+#import datetime
+
+#input = int(input("Enter numerical month number eg 03 for march : "))
+#my_date = datetime.datetime.strptime(input, "%m")
+#print my_date.strftime("%b") 
+# written by christine melia 
+
+import datetime
+
+
+# getting input of integer from the user and assigning to monthinger 
+monthinteger = int(input("Please enter numerical month number eg 3 for march : "))
+
+#using tuple function to output string month 
+month= datetime.date(1900, monthinteger, 1).strftime('%B')
+
+
+print(month)
+
+# if else statenet taking in months string from tuple user input and conversion of date time and comparing 
+# to months i have in a statement hereto output the seasin according to month 
+
+if month in ('January', 'February', 'March'):
+
+    season = 'Winter'
+
+elif month in ('April', 'May', 'June'):
+
+    season = 'Spring'
+
+elif month in ('July', 'August', 'September'):
+
+    season = 'Summer'
+
+else:
+
+    season = 'Autumn'
+
+print("Season is",season)
+
+
+
+#####################
+
+
+
+
+
+#Create an empty list.
+#Ask the user how many items he wants to add to the list.
+#Add said items to the list.
+#Print items.
+# having a litle trouble with comparitive lists so used a java like expression 
+# written by christine melia 
+s_list={"":0,}
+while True:
+    sh_listinfo=input("please enter a shopping item:")
+    if sh_listinfo in s_list:
+        print (s_list[sh_listinfo])
+    else:
+        print("please enter the quantity needed:")
+        quantity=input()
+        s_list[sh_listinfo]=int(quantity)
+        print (s_list)
+       
+       
+       
+       ########################
+       
+       
+       
+       
+       
+       # Write a function which finds the largest of a list of numbers. 
+# Do not use a method, compare each element to the current maximum. Use a loop
+# written by christine melia .
+
+# use max min function or len function 
+
+
+#create an empty array of numbers 
+numbers = []
+
+#set n = 0
+n = 0
+
+#looping - while the condition false , credited help from www.jython.org/jythonbook/en/1.0/OpsExpressPF.html
+
+
+while n != 'N':
+    #getting user input to add numbers to the array list initilaising n 
+   n = input('Please enter a number, or N to stop: ')
+
+#conditional if statement 
+   if n != 'N':
+        # appending the array of numbers to add more to list 
+       numbers.append(n)
+
+    
+    # formatiing the numbers using .format in case of floating int , using .len to return no of objects , using max to return largest element 
+    #outputs the numbers the number of numbrrs user entetered abnd the max number in list , format the numbers finf the lenght and maximnum 
+print('You entered {} numbers and the maximum is {}'.format(len(numbers), max(numbers)))
+
+
+
+
+
+
+########################
+
+
+
+#Create a program that gives the user a menu with the following options:
+#A Add an element to a list
+#R Remove an element from the list
+#P Replace an element with another
+#S sort the list Original list: [‘Madrid’, ‘Dublin’, ’New York’, ’Paris’, ’London’]
+
+
+# declare and create menu list of options 
+
+
+Cities [‘Madrid’, ‘Dublin’, ’New York’, ’Paris’, ’London’]
+
+ans=True
+while ans:
+    print("""
+    A.Add 
+    R.Remove
+    P.Replace
+    S.Sort
+    E.Exit/Quit
+    """)
+
+    ans=input("What would you like to do? ")
+    if ans=="A":
+      print("\n Element Added")
+    elif ans=="R":
+      print("\n Element Removed")
+    elif ans=="P":
+      print("\n Element Replaced")
+    elif ans=="S":
+        
+     print("\n Element Sorted original list  [‘Madrid’, ‘Dublin’, ’New York’, ’Paris’, ’London’]")
+    
+    elif ans=="4":
+      print("\n Goodbye") 
+      ans = None
+
+        #menu created above now need to create list and use menu to add remove etc 
+        
+        
